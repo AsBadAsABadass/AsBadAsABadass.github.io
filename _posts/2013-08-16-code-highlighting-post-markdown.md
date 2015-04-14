@@ -4,8 +4,8 @@ title: Syntax Highlighting Post Markdown
 description: "Demo post displaying the various ways of highlighting code in Markdown."
 modified: 2014-12-23
 tags: [sample post, code, highlighting]
-background: color14.png
 image:
+  background: color14.png
   feature: abstract-10.jpg
   credit: dargadgetz
   creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
@@ -43,16 +43,18 @@ To modify styling and highlight colors edit `/_sass/_coderay.scss`. Line numbers
 }
 ~~~
 
-~~~ html
-{% raw %}<nav class="pagination" role="navigation">
-    {% if page.previous %}
-        <a href="{{ site.url }}{{ page.previous.url }}" class="btn" title="{{ page.previous.title }}">Previous article</a>
-    {% endif %}
-    {% if page.next %}
-        <a href="{{ site.url }}{{ page.next.url }}" class="btn" title="{{ page.next.title }}">Next article</a>
-    {% endif %}
-</nav><!-- /.pagination -->{% endraw %}
-~~~
+
+{% raw %}
+    <nav class="pagination" role="navigation">
+        {% if page.previous %}
+            <a href="{{ site.url }}{{ page.previous.url }}" class="btn" title="{{ page.previous.title }}">Previous article</a>
+        {% endif %}
+        {% if page.next %}
+            <a href="{{ site.url }}{{ page.next.url }}" class="btn" title="{{ page.next.title }}">Next article</a>
+        {% endif %}
+    </nav><!-- /.pagination -->
+{% endraw %}
+
 
 ~~~ { highlight ruby }
 module Jekyll
