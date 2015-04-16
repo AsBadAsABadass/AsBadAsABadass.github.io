@@ -11,14 +11,15 @@ url: http://asbadasabadass.github.io
 owner:
   name:           AsBadAsABadass
   avatar:         avatar.jpg
-  bio:            "Bio"
-  email:          asbadasabadass@gmail.com
+  bio:            "Nope."
+  email:          AsBadAsABadass@gmail.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:        AsBadAsABadass
   facebook:       AsBadAsABadass
   github:         AsBadAsABadass
   # google plus id, include the '+', eg +mmistakes
   google_plus:    +AsBadAsABadass
+  youtube:        AsBadAsABadass
 
 # Background image to be tiled on all pages
 background: 
