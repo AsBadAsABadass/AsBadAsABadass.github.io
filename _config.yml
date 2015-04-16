@@ -14,11 +14,11 @@ owner:
   # bio:            "Nope."
   email:          AsBadAsABadass@gmail.com
   # Social networking links used in footer. Update and remove as you like.
-  # twitter:        AsBadAsABadass
-  # facebook:       AsBadAsABadass
-  # github:         AsBadAsABadass
+  twitter:        AsBadAsABadass
+  facebook:       AsBadAsABadass
+  github:         AsBadAsABadass
   # google plus id, include the '+', eg +mmistakes
-  # google_plus:    +AsBadAsABadass
+  google_plus:    +AsBadAsABadass
   youtube:        AsBadAsABadass
 
 # Background image to be tiled on all pages
