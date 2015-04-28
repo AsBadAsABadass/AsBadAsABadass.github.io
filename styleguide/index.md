@@ -18,7 +18,7 @@ Syntax highlighting is a feature that displays source code, in different colors 
 
 To modify styling and highlight colors edit `/_sass/_pygments.scss`.
 
-~~~ bad
+~~~ style_bad
 #container {
     float: left;
     margin: 0 -240px 0 0;
@@ -26,7 +26,7 @@ To modify styling and highlight colors edit `/_sass/_pygments.scss`.
 }
 ~~~
 
-~~~ good
+~~~ style_good
 #container {
     float: left;
     margin: 0 -240px 0 0;
