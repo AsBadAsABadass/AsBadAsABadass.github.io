@@ -124,13 +124,11 @@ pre {
 	}
 }
 
-pre {
-	code {
-		.language-style_good {
-			background-color: #ffe6d8;
-		}
-		.language-style_bad {
-			background-color: #e6ffd8;
-		}
+code {
+	.language-style_good {
+		background-color: #ffe6d8;
+	}
+	.language-style_bad {
+		background-color: #e6ffd8;
 	}
 }
