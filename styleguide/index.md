@@ -6,43 +6,49 @@ modified: 2015-4-28
 tags: [programming]
 share: false
 comments: false
-image:
-  feature: http://www.wallulung.com/wp-content/uploads/2015/03/abstract_wallpaper_7970_Cool_Amazing.jpg
-  credit: http://www.wallulung.com/
-  creditlink: http://www.wallulung.com/
 ---
 
-Syntax highlighting is a feature that displays source code, in different colors and fonts according to the category of terms. This feature facilitates writing in a structured language such as a programming language or a markup language as both structures and syntax errors are visually distinct. Highlighting does not affect the meaning of the text itself; it is intended only for human readers.
+### Naming Convention
 
-### Pygments Code Blocks
+***camelCase***
+start lowercase, no underscores, each seperate word starts uppercase, abbreviations either uppercase in total or just the first character  
+***PascalCase*** same as _camelCase_, but starts always with a capital letter
+***snake_case*** all lowercase (also abbreviations), words seperated by underscores
 
-To modify styling and highlight colors edit `/_sass/_pygments.scss`.
+#### Local Variable Names
 
-~~~ style_bad
-#container {
-    float: left;
-    margin: 0 -240px 0 0;
-    width: 100%;
+Local variable names, which are dropped at the end of a scope should be named in _camelCase_.  
+(optionally I currently experiment with *snake_case* for local variables)
+
+~~~
+{
+    int fooBar;
+    int foo_bar;
 }
 ~~~
 
-~~~ style_good
-#container {
-    float: left;
-    margin: 0 -240px 0 0;
-    width: 100%;
-}
+#### (statefull) Class Names & Methods
+
+Class names, that contain logic should be in *PascalCase*.
+Methods should be in *camelCase*.
+
+~~~
+class FooBar
+{
+    void methodBar();
+};
 ~~~
 
-{% highlight html %}
-{% raw %}
-<nav class="pagination" role="navigation">
-    {% if page.previous %}
-        <a href="{{ site.url }}{{ page.previous.url }}" class="btn" title="{{ page.previous.title }}">Previous article</a>
-    {% endif %}
-    {% if page.next %}
-        <a href="{{ site.url }}{{ page.next.url }}" class="btn" title="{{ page.next.title }}">Next article</a>
-    {% endif %}
-</nav><!-- /.pagination -->
-{% endraw %}
-{% endhighlight %}
+#### (stateless) Struct/Union Names and simple C-Style type aliases
+
+~~~
+typedef float3 float[3];
+
+struct aabb
+{
+    float3 center;
+    float3 extent;
+};
+~~~
+
+
