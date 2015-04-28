@@ -13,7 +13,7 @@ comments: false
 **camelCase**
 start lowercase, no underscores, each seperate word starts uppercase, abbreviations either uppercase in total or just the first character  
 **PascalCase** same as _camelCase_, but starts always with a capital letter  
-**snake_case** all lowercase (also abbreviations), words seperated by underscores
+**snake_case** all lowercase (also abbreviations), words seperated by underscores  
 **ALL_CAPS** like *snake_case*, but only uppercase
 
 #### Local Variable Names
