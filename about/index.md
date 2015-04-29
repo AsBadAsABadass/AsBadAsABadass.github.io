@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About: As Bad As A Badass
+title: "About: As Bad As A Badass"
 comments: false
 share: false
 ---
