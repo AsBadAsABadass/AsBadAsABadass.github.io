@@ -13,7 +13,7 @@ comments: false
 **`camelCase`**
 : start lowercase, no underscores, each seperate word starts uppercase, abbreviations either uppercase in total or just the first character
 
-**_PascalCase_**
+**_`PascalCase`_**
 : same as _camelCase_, but starts always with a capital letter
 
 **_snake_case_**
