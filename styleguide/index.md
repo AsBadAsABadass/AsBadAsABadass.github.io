@@ -10,7 +10,7 @@ comments: false
 
 ### Naming Convention
 
-**_camelCase_**
+**`camelCase`**
 : start lowercase, no underscores, each seperate word starts uppercase, abbreviations either uppercase in total or just the first character
 
 **_PascalCase_**
