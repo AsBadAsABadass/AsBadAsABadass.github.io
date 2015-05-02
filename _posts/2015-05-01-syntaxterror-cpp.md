@@ -85,6 +85,22 @@ class Bar : Foo // Bar inherits (private'ly) from Foo
 };
 ~~~
 
+{% highlight cpp %}
+class Foo
+{
+    public:
+        int member;
+        
+        Foo( int value ) : member( value ) // initializer list
+        {
+        }
+};
+
+class Bar : Foo // Bar inherits (private'ly) from Foo
+{
+};
+{% endhighlight %}
+
 **Note:** The colon also appears in labels and the ternary `?:`-operator, but these aren't exclusive to C++, so I left them out.
 
 ### What is this tilde `~` for? {#tilde}
