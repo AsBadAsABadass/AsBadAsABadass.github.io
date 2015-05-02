@@ -84,16 +84,13 @@ class Bar : Foo // Bar inherits (private'ly) from Foo
 
 ### What is this tilde `~` for? {#tilde}
 
-This colon is valid in two places:
-
-- after constructors as _initializer list_
-- after a class definition for inheritance
+The tilde befor a method marks the *destructor*:
 
 ~~~ cpp
 class Foo
 {
     public:
-        ~Foo();    // constructor
+        Foo();     // constructor
         ~Foo();    // destructor
 };
 ~~~
@@ -120,6 +117,29 @@ auto pi = Pi< float >;
 See here for more:
 
 - [TODO]()
+
+### What does `= 0` mean?
+
+Such methods are *pure virtual* methods. Any class, that inherits such a class **must** override this method. A pure method needs to be `virtual`.
+
+~~~ cpp
+class Foo
+{
+    virtual void method() = 0; // pure virtual function
+};
+
+class Bar : Foo
+{
+    int method(); // error: must override void method();
+};
+
+class Baz : Foo
+{
+    void method();                       // OK
+    virtual void method()                // better
+    virtual void method() = override;    // best
+};
+~~~
 
 
 
