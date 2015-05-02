@@ -34,9 +34,9 @@ image:
   </header>
   <div class="entry-content">
     {% if post.excerpt %}
-      <summary>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</summary>
+      {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
     {% else %}
-      <article>{{ post.content | strip_html | truncatewords: 50 }}</article>
+      {{ post.content | strip_html | truncatewords: 50 }}
     {% endif %}
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->
