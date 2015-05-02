@@ -33,7 +33,11 @@ image:
     {% endif %}
   </header>
   <div class="entry-content">
-    {{ post.content }}
+    {% if post.excerpt %}
+      {{ post.excerpt }}
+    {% else %}
+      {{ post.content | strip_html | truncatewords: 50 }}
+    {% endif %}
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->
 {% endfor %}
