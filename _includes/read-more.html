@@ -5,7 +5,11 @@
     </div><!-- /.read-more-header -->
     <div class="read-more-content">
       <h3><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
-      {{ post.excerpt }}
+      {% if post.excerpt %}
+        {{ post.excerpt }}
+      {% else %}
+        {{ post.content | strip_html | truncate: 50 }}
+      {% endif %}
       <a href="{{ site.url }}{{ post.url }}">Continue reading</a>
     </div><!-- /.read-more-content -->
   {% endfor %}
