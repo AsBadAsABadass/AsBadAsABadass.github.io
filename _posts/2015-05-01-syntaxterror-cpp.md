@@ -8,7 +8,8 @@ comments: true
 description: "All you need to know when you learn C++ and even Google doesn't help you out."
 ---
 
-## Backstory
+
+## Backstory {.no_toc}
 
 You may want to [skip](#weird-syntax) this part, as it is only a tiny backstory, of why I write this article.
 
@@ -21,6 +22,10 @@ After that, I decided to learn C++ entirely from free online sources. So I downl
 But how does one google for syntax?
 
 Therefore I decided to write up this collection of C++ syntax, that is kind of hard to search for and provide you some terms, names and maybe links.
+
+## Overview {:.no_toc}
+- TOC
+{:toc}
 
 ## What is this weird syntax? {#weird-syntax}
 
