@@ -36,7 +36,7 @@ image:
     {% if post.excerpt %}
       {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
     {% else %}
-      {{ post.content | strip_html | truncatewords: 50 }}
+      {{ post.content | strip_html | truncatewords: 25 }}
     {% endif %}
     <br><br>
     <a href="{{ post.url }}">&#8594; Read more...</a>
