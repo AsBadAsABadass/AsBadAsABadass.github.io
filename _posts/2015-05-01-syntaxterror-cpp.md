@@ -7,6 +7,7 @@ share: true
 comments: true
 description: "All you need to know when you learn C++ and even Google doesn't help you out."
 ---
+
 ## Backstory
 
 You may want to [skip](#weird-syntax) this part, as it is only a tiny backstory, of why I write this article.
@@ -19,7 +20,7 @@ After that, I decided to learn C++ entirely from free online sources. So I downl
 
 But how does one google for syntax?
 
-Therefore I decided to write up this collection of C++ syntax, that is kind of hard to search for.
+Therefore I decided to write up this collection of C++ syntax, that is kind of hard to search for and provide you some terms, names and maybe links.
 
 ## What is this weird syntax? {#weird-syntax}
 
@@ -32,29 +33,53 @@ The following is an excerpt from [stackoverflow.com](http://stackoverflow.com/a/
 Declaration:
 : A declaration introduces an identifier and describes its type, be it a type, object, or function. A declaration is **what the compiler needs** to accept references to that identifier. These are declarations:
 
+  ~~~ cpp
+  extern int number;              // a global variable
+  int fooBar( int a , int b );    // a prototype
+  class Baz;                      // a forward declaration
   ~~~
-extern int number;              // a global variable
-int fooBar( int a , int b );    // a prototype
-class Baz;                      // a forward declaration
-~~~
 
 Definition:
 : A definition actually instantiates/implements this identifier. It's **what the linker needs** in order to link references to those entities. These are definitions corresponding to the above declarations:
 
+  ~~~ cpp
+  int number = 42;
+
+  int fooBar( int a , int b )
+  {
+      return a + b;
+  }
+
+  class Baz
+  {
+      public:
+          int member;
+  };
   ~~~
-int number = 42;
 
-int fooBar( int a , int b )
-{
-    return a + b;
-}
+### What is that colon `:`?
 
-class Baz
+This colon is valid in two places (except from the ternary `?:`-operator):
+
+- after constructors as _initializer list_
+- after a class definition for inheritance
+
+~~~ cpp
+class Foo
 {
     public:
         int member;
+        
+        Foo( int value ) : member( value ) // initializer list
+        {
+        }
 };
-~~~
+
+class Bar : Foo // Bar inherits (private'ly) from Foo
+{
+};
+
+~~~ 
 
 
 
