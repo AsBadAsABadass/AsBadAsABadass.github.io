@@ -33,8 +33,12 @@ image:
     {% endif %}
   </header>
   <div class="entry-content">
-      {{ post.excerpt }}
-    <a href="{{ post.url }}">&#8594; Read more...</a>
+    {% if post.description %}
+      {{ post.description }}
+    {% else %}
+      {{ post.content | strip_html | strip_newlines | truncate: 50 }}&hellip;
+    {% endif %}
+    <a href="{{ site.url }}{{ post.url }}">Continue reading</a>
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->
 {% endfor %}
