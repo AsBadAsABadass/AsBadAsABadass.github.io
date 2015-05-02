@@ -36,9 +36,9 @@ image:
     {% if post.description %}
       {{ post.description }}
     {% else %}
-      {{ post.content | strip_html | strip_newlines | truncate: 50 }}&hellip;
+      {{ post.content | strip_html | strip_newlines | truncatewords: 50 }}
     {% endif %}
-    <br>
+    <br><br>
     <a href="{{ site.url }}{{ post.url }}">&#8594; Read more</a>
     </p>
   </div><!-- /.entry-content -->
