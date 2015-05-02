@@ -33,8 +33,7 @@ image:
     {% endif %}
   </header>
   <div class="entry-content">
-      {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
-    <br><br>
+      {{ post.excerpt }}
     <a href="{{ post.url }}">&#8594; Read more...</a>
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->
