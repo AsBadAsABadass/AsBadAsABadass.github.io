@@ -5,12 +5,19 @@
     </div><!-- /.read-more-header -->
     <div class="read-more-content">
       <h3><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
-      {% if post.excerpt %}
-        {{ post.excerpt }}
-      {% else %}
-        {{ post.content | strip_html | truncate: 50 }}
-      {% endif %}
-      <a href="{{ site.url }}{{ post.url }}">Continue reading</a>
+      <p>
+        {% if post.description %}
+          DESCRIPTION
+          {{ post.description }}
+        {% elsif post.excerpt %}
+          EXCERPT
+          {{ post.excerpt }}
+        {% else %}
+          CONTENT
+          {{ post.content | strip_html | strip_newlines | truncate: 50 }}&hellip;
+        {% endif %}
+        <a href="{{ site.url }}{{ post.url }}">Continue reading</a>
+      </p>
     </div><!-- /.read-more-content -->
   {% endfor %}
   <div class="read-more-list">
