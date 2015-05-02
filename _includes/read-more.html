@@ -7,13 +7,8 @@
       <h3><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
       <p>
         {% if post.description %}
-          DESCRIPTION
           {{ post.description }}
-        {% elsif post.excerpt %}
-          EXCERPT
-          {{ post.excerpt }}
         {% else %}
-          CONTENT
           {{ post.content | strip_html | strip_newlines | truncate: 50 }}&hellip;
         {% endif %}
         <a href="{{ site.url }}{{ post.url }}">Continue reading</a>
