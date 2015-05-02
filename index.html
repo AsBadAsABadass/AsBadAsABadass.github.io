@@ -38,8 +38,8 @@ image:
     {% else %}
       {{ post.content | strip_html | truncatewords: 50 }}
     {% endif %}
-    <br>
-    <a href="{{ post.url }}">&#10149; Read more...</a>
+    <br><br>
+    <a href="{{ post.url }}">&#8594; Read more...</a>
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->
 {% endfor %}
