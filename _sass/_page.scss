@@ -293,6 +293,7 @@ header .entry-meta {
 	@include clearfix;
 }
 .read-more-header {
+	text-align: left;
 	position: absolute;
 	top: -20px;
 	left: 0;
@@ -303,6 +304,7 @@ header .entry-meta {
 	}
 }
 .read-more-content {
+	text-align: left;
 	@include font-size(16);
 	// Dotted line underlines for links
 	p > a,
