@@ -31,8 +31,9 @@ bing_verify:
 timezone:    America/New_York
 future:      true
 highlighter: pygments
-# markdown:    kramdown
-markdown: redcarpet
+pygments:    true
+markdown:    kramdown
+#markdown: redcarpet
 gems:
   - jekyll-sitemap
 sass:
@@ -48,11 +49,8 @@ paginate: 10
 #excerpt_separator: <!--more-->
 
 # Build settings
-markdown: redcarpet
-markdown_ext:  markdown,mkdown,mkdn,mkd,md
-
-redcarpet:
-  extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "with_toc_data", "fenced_code_blocks"]
+#redcarpet:
+#  extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "with_toc_data", "fenced_code_blocks"]
   
 kramdown:
   auto_ids: true
