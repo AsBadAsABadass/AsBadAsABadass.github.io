@@ -64,10 +64,10 @@ Definition:
 
 ### What is that colon `:` for? {#colon}
 
-This colon is valid in two places:
+This colon is valid and unique in two places in C++:
 
 - after constructors as _initializer list_
-- after a class definition for inheritance
+- in a class definition after the name for inheritance
 
 ~~~ cpp
 class Foo
@@ -85,27 +85,9 @@ class Bar : Foo // Bar inherits (private'ly) from Foo
 };
 ~~~
 
-{% highlight cpp %}
-class Foo
-{
-    public:
-        int member;
-        
-        Foo( int value ) : member( value ) // initializer list
-        {
-        }
-};
-
-class Bar : Foo // Bar inherits (private'ly) from Foo
-{
-};
-{% endhighlight %}
-
-**Note:** The colon also appears in labels and the ternary `?:`-operator, but these aren't exclusive to C++, so I left them out.
-
 ### What is this tilde `~` for? {#tilde}
 
-The tilde befor a method marks the *destructor*:
+The tilde befor a method marks the _destructor_:
 
 ~~~ cpp
 class Foo
@@ -156,31 +138,10 @@ class Bar : Foo
 
 class Baz : Foo
 {
-    void method();                       // OK
-    virtual void method()                // better
-    virtual void method() = override;    // best
+    void method();                     // OK
+    virtual void method()              // better
+    virtual void method() override;    // best
 };
 ~~~
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
