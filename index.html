@@ -32,13 +32,15 @@ image:
       <h1 class="entry-title"><a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">{{ post.title }}</a></h1>
     {% endif %}
   </header>
-  <div class="entry-content">
+  <div class="entry-content"><p>
     {% if post.description %}
       {{ post.description }}
     {% else %}
       {{ post.content | strip_html | strip_newlines | truncate: 50 }}&hellip;
     {% endif %}
-    <a href="{{ site.url }}{{ post.url }}">Continue reading</a>
+    <br>
+    <a href="{{ site.url }}{{ post.url }}">&#8594; Read more</a>
+    </p>
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->
 {% endfor %}
