@@ -9,7 +9,8 @@ description: "All you need to know when you learn C++ and even Google doesn't he
 ---
 
 
-## Backstory {.no_toc}
+## Backstory
+{:.no_toc}
 
 You may want to [skip](#weird-syntax) this part, as it is only a tiny backstory, of why I write this article.
 
@@ -23,11 +24,11 @@ But how does one google for syntax?
 
 Therefore I decided to write up this collection of C++ syntax, that is kind of hard to search for and provide you some terms, names and maybe links.
 
-## Overview {:.no_toc}
+## What is this weird syntax? {#weird-syntax}
+{:.no_toc}
+
 - TOC
 {:toc}
-
-## What is this weird syntax? {#weird-syntax}
 
 Note: the following sections do not have a specific order.
 
