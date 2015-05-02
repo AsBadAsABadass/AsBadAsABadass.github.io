@@ -57,9 +57,9 @@ Definition:
   };
   ~~~
 
-### What is that colon `:`?
+### What is that colon `:` for? {#colon}
 
-This colon is valid in two places (except from the ternary `?:`-operator):
+This colon is valid in two places:
 
 - after constructors as _initializer list_
 - after a class definition for inheritance
@@ -78,8 +78,68 @@ class Foo
 class Bar : Foo // Bar inherits (private'ly) from Foo
 {
 };
+~~~
 
-~~~ 
+**Note:** The colon also appears in labels and the ternary `?:`-operator, but these aren't exclusive to C++, so I left them out.
+
+### What is this tilde `~` for? {#tilde}
+
+This colon is valid in two places:
+
+- after constructors as _initializer list_
+- after a class definition for inheritance
+
+~~~ cpp
+class Foo
+{
+    public:
+        ~Foo();    // constructor
+        ~Foo();    // destructor
+};
+~~~
+
+### Variadic Templates vs. Vairable templates
+
+**Varia*dic* templates** are templates with an arbitrary number of arguments.
+
+See here for more:
+
+- [TODO]()
+
+**Varia*ble* templates** are variables that can be templated.
+
+Example:
+
+~~~ cpp
+template< typename T >
+constexpr T Pi = T( M_PI );
+
+auto pi = Pi< float >;
+~~~
+
+See here for more:
+
+- [TODO]()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
