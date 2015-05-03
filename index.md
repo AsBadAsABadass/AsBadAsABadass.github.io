@@ -1,5 +1,5 @@
 ---
-layout: post-index
+layout: site-index
 title: "Nope"
 description: "Describe this nonsense."
 reading_time: false
