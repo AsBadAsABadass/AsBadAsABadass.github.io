@@ -3,6 +3,9 @@ layout: {{ layout }}
 title: {{ title }}
 date: {{ date }}
 modified:
+reading_time: false
+share: false
+comments: false
 description:
 image:
   feature:
