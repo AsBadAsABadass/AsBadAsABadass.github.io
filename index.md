@@ -2,7 +2,8 @@
 layout: page
 title: Nope.
 description: "Describe this nonsense."
-tags: [Jekyll, theme]
+reading_time: false
+share: false
 comments: false
 image:
   feature: abstract-1.jpg
