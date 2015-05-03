@@ -1,6 +1,6 @@
 ---
-layout: page
-title: Nope.
+layout: post-index
+title: "Nope"
 description: "Describe this nonsense."
 reading_time: false
 share: false
